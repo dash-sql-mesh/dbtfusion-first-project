@@ -1,0 +1,11 @@
+projeto-python:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      dataset: dw
+      location: us-east1
+      threads: 16
+      project: lombra01
+      keyfile: D:\\dbt\\lombra01-1fcc57b8341c.json

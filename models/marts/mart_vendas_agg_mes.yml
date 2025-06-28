@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: mart_vendas_agg_mes
+    description: "Relatório que agrupa as vendas por mês, mostrando o total de vendas e o valor total arrecadado, além do trimestre correspondente."
+    columns:
+      - name: mm_calendario
+        description: "Mês do ano em que as vendas ocorreram."
+      - name: aa_calendario
+        description: "Ano em que as vendas ocorreram."
+      - name: nu_trimestre
+        description: "Trimestre do ano em que as vendas ocorreram."
+      - name: qt_venda
+        description: "Quantidade total de produtos vendidos no mês."
+      - name: vr_venda
+        description: "Valor total arrecadado com as vendas no mês."

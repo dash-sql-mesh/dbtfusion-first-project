@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: fato_vendas
+    description: "Fato de vendas contendo informações sobre as transações realizadas."
+    columns:
+      - name: id_data
+        description: "Identificador da data da venda, referenciando a dimensão de data."
+      - name: id_cliente
+        description: "Identificador do cliente que realizou a compra, referenciando a dimensão de clientes."
+      - name: id_localidade
+        description: "Identificador da localidade onde a venda ocorreu, referenciando a dimensão de localidades."
+      - name: id_produto
+        description: "Identificador do produto vendido, referenciando a dimensão de produtos."
+      - name: qt_venda
+        description: "Quantidade de unidades do produto vendidas na transação."
+      - name: vr_venda
+        description: "Valor total da venda, calculado com base na quantidade e no preço unitário do produto."

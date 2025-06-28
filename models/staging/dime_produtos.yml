@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: dime_produtos
+    description: "Dimensão de produtos que contém informações sobre os produtos disponíveis."
+    columns:
+      - name: id_produto
+        description: "Identificador único do produto."
+      - name: nm_produto
+        description: "Nome do produto."
+      - name: ds_categoria_produto
+        description: "Categoria do produto."
+      - name: vr_preco
+        description: "Preço unitário do produto."

@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: dime_clientes
+    description: "Dimensão de clientes que contém informações detalhadas sobre os clientes."
+    columns:
+      - name: id_cliente
+        description: "Identificador único do cliente."
+      - name: nm_cliente
+        description: "Nome completo do cliente."
+      - name: ds_email
+        description: "Email do cliente."
+      - name: nu_idade
+        description: "Idade do cliente."
+      - name: sg_genero
+        description: "Gênero do cliente (M para masculino, F para feminino)."

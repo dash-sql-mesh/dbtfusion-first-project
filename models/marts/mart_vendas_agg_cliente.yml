@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: mart_vendas_agg_cliente
+    description: "Relatório que apresenta o total de produtos comprados e o valor total gasto por cada cliente."
+    columns:
+      - name: id_cliente
+        description: "Identificador único do cliente."
+      - name: nm_cliente
+        description: "Nome do cliente."
+      - name: qt_item_comprado
+        description: "Total de produtos comprados pelo cliente."
+      - name: vr_gasto
+        description: "Valor total gasto pelo cliente em todas as suas compras."

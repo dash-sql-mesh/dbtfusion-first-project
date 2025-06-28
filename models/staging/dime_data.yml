@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: dime_data
+    description: "Dimensão de datas que contém informações sobre o calendário."
+    columns:
+      - name: id_data
+        description: "Identificador único da data no formato YYYYMMDD."
+      - name: dt_calendario
+        description: "Data completa no formato YYYY-MM-DD."
+      - name: aa_calendario
+        description: "Ano referente à data."
+      - name: mm_calendario
+        description: "Mês referente à data."
+      - name: dd_calendario
+        description: "Dia do mês referente à data."
+      - name: ds_dia_semana
+        description: "Dia da semana (nome do dia)."
+      - name: nu_trimestre
+        description: "Trimestre do ano ao qual a data pertence."
+      - name: fl_fim_semana
+        description: "Indica se a data corresponde a um fim de semana (True ou False)."

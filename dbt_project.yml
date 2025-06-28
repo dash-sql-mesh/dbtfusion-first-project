@@ -1,0 +1,28 @@
+name: projeto-python
+
+profile: projeto-python
+
+seed-paths: ["seeds"]
+model-paths: ["models"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+seeds:
+  # Builds seeds into '<your_schema_name>_raw'
+  projeto-python:
+    +schema: raw
+
+models:
+  projeto-python:
+    +persist_docs:
+      relation: true      
+      columns: true
+    # Materialize staging models as views, and marts as tables
+    staging:
+      +materialized: table
+    marts:
+      +materialized: table

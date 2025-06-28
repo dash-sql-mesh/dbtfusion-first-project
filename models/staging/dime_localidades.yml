@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: dime_localidades
+    description: "Dimensão de localidades contendo informações sobre cidades e estados."
+    columns:
+      - name: id_localidade
+        description: "Identificador único da localidade."
+      - name: nm_cidade
+        description: "Nome da cidade."
+      - name: nm_uf
+        description: "Nome da UF."
+      - name: nm_pais
+        description: "Nome do país."
+      - name: nu_cep
+        description: "Código postal (CEP) da localidade."
